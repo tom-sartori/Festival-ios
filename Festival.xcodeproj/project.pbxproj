@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C15222F766B0972FCA29B09 /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152E8A169130AA8795A4A5 /* Festival.swift */; };
 		1C1522F06D0257757495246A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */; };
 		1C1524FB6502F3D77DD1E806 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152FD2D4615FCB138DBFAB /* ContentView.swift */; };
 		1C1528A2FF85D597F84C0B70 /* FestivalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152BAF65DA58183207BBAE /* FestivalUITests.swift */; };
@@ -40,6 +41,7 @@
 		1C152C908AB9530E5457DDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C152CDC6A95774A90C4E2DC /* FestivalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C152E4247CA6CA9A0318172 /* FestivalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalTests.swift; sourceTree = "<group>"; };
+		1C152E8A169130AA8795A4A5 /* Festival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
 		1C152ED14C0CAE86D82B7BF5 /* Festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Festival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C152F0E7E970721A1C4F64F /* FestivalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalApp.swift; sourceTree = "<group>"; };
 		1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				1C15281657A92DDB4716448D /* Preview Content */,
 				1C152F0E7E970721A1C4F64F /* FestivalApp.swift */,
 				1C152FD2D4615FCB138DBFAB /* ContentView.swift */,
+				1C152E8A169130AA8795A4A5 /* Festival.swift */,
 			);
 			path = Festival;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				1C152A69981C26DDBE8F48F4 /* FestivalApp.swift in Sources */,
 				1C1524FB6502F3D77DD1E806 /* ContentView.swift in Sources */,
+				1C15222F766B0972FCA29B09 /* Festival.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
