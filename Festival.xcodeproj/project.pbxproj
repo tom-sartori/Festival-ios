@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1C1522F06D0257757495246A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */; };
-		1C1524FB6502F3D77DD1E806 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152FD2D4615FCB138DBFAB /* ContentView.swift */; };
+		1C1525A9F8F8B628E57615D8 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152468FE20897C67053323 /* TrackModel.swift */; };
+		1C152610BE0B08D19EA3FFD3 /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1524C2477D77BE59220642 /* TrackListViewModel.swift */; };
+		1C15262DDB715B12DA20BA24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152D9A3156A619300669A3 /* ContentView.swift */; };
 		1C1528A2FF85D597F84C0B70 /* FestivalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152BAF65DA58183207BBAE /* FestivalUITests.swift */; };
 		1C152A69981C26DDBE8F48F4 /* FestivalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152F0E7E970721A1C4F64F /* FestivalApp.swift */; };
 		1C152ABB4D810820329136A9 /* FestivalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152CDC6A95774A90C4E2DC /* FestivalUITestsLaunchTests.swift */; };
+		1C152B2CC4FB958DDAC2A26E /* TrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C15265094E59E58CCA216BE /* TrackViewModel.swift */; };
+		1C152BDA8C4C337C0B72095D /* TrackViewModelObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C15252C597BF626CA05D014 /* TrackViewModelObserver.swift */; };
 		1C152C72EC5CC7C49269FF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C152C908AB9530E5457DDC8 /* Assets.xcassets */; };
+		1C152D939F3914702C78D823 /* TrackModelObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152FEFE874231AE79C802B /* TrackModelObserver.swift */; };
 		1C152EF2B7A3E29B6A9A39D4 /* FestivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152E4247CA6CA9A0318172 /* FestivalTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,16 +39,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C152468FE20897C67053323 /* TrackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackModel.swift; path = model/TrackModel.swift; sourceTree = "<group>"; };
+		1C1524C2477D77BE59220642 /* TrackListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackListViewModel.swift; path = "view-model/TrackListViewModel.swift"; sourceTree = "<group>"; };
+		1C15252C597BF626CA05D014 /* TrackViewModelObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackViewModelObserver.swift; path = observer/TrackViewModelObserver.swift; sourceTree = "<group>"; };
+		1C15265094E59E58CCA216BE /* TrackViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackViewModel.swift; path = "view-model/TrackViewModel.swift"; sourceTree = "<group>"; };
 		1C1528E3E84DDDED11A0B1B6 /* FestivalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1529469728113AEADAD04B /* FestivalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C152BAF65DA58183207BBAE /* FestivalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalUITests.swift; sourceTree = "<group>"; };
 		1C152C908AB9530E5457DDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C152CDC6A95774A90C4E2DC /* FestivalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C152D9A3156A619300669A3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = view/ContentView.swift; sourceTree = "<group>"; };
 		1C152E4247CA6CA9A0318172 /* FestivalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalTests.swift; sourceTree = "<group>"; };
 		1C152ED14C0CAE86D82B7BF5 /* Festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Festival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C152F0E7E970721A1C4F64F /* FestivalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalApp.swift; sourceTree = "<group>"; };
 		1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1C152FD2D4615FCB138DBFAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C152FEFE874231AE79C802B /* TrackModelObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackModelObserver.swift; path = observer/TrackModelObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +97,12 @@
 				1C152C908AB9530E5457DDC8 /* Assets.xcassets */,
 				1C15281657A92DDB4716448D /* Preview Content */,
 				1C152F0E7E970721A1C4F64F /* FestivalApp.swift */,
-				1C152FD2D4615FCB138DBFAB /* ContentView.swift */,
+				1C152468FE20897C67053323 /* TrackModel.swift */,
+				1C15265094E59E58CCA216BE /* TrackViewModel.swift */,
+				1C152D9A3156A619300669A3 /* ContentView.swift */,
+				1C1524C2477D77BE59220642 /* TrackListViewModel.swift */,
+				1C152FEFE874231AE79C802B /* TrackModelObserver.swift */,
+				1C15252C597BF626CA05D014 /* TrackViewModelObserver.swift */,
 			);
 			path = Festival;
 			sourceTree = "<group>";
@@ -239,7 +254,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C152A69981C26DDBE8F48F4 /* FestivalApp.swift in Sources */,
-				1C1524FB6502F3D77DD1E806 /* ContentView.swift in Sources */,
+				1C1525A9F8F8B628E57615D8 /* TrackModel.swift in Sources */,
+				1C152B2CC4FB958DDAC2A26E /* TrackViewModel.swift in Sources */,
+				1C15262DDB715B12DA20BA24 /* ContentView.swift in Sources */,
+				1C152610BE0B08D19EA3FFD3 /* TrackListViewModel.swift in Sources */,
+				1C152D939F3914702C78D823 /* TrackModelObserver.swift in Sources */,
+				1C152BDA8C4C337C0B72095D /* TrackViewModelObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
