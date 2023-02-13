@@ -4,10 +4,10 @@
 
 import Foundation
 
-class TrackViewModel: Equatable, Hashable, TrackModelObserver {
+class TrackViewModel: Equatable, Hashable, TrackModelObserver, ObservableObject {
 
     public var id: UUID
-    public var model: TrackModel
+    @Published public var model: TrackModel
 
     private var observers: [TrackViewModelObserver]
 
