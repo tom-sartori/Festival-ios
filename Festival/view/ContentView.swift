@@ -27,8 +27,8 @@ struct ContentView: View {
 //		}
 //			.padding()
 
-		NavigationView {
-			VStack {
+		VStack {
+			NavigationStack {
 				List {
 					ForEach(trackListViewModel, id: \.self) {
 						item in
@@ -45,8 +45,8 @@ struct ContentView: View {
 							trackListViewModel.move(fromOffsets: indexSet, toOffset: index)
 						}
 				}
-				EditButton()
 			}
+			EditButton()
 		}
 	}
 }

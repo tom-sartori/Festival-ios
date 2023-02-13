@@ -7,6 +7,7 @@ import SwiftUI
 struct TrackDetailView: View {
 
 	@ObservedObject public var track: TrackViewModel
+
 	@State private var newTrackName: String
 
 	init(track: TrackViewModel) {
@@ -16,22 +17,27 @@ struct TrackDetailView: View {
 
 	var body: some View {
 		VStack {
-			Text("Nom du morceau : " + track.trackName)
-			Text("Nom du l'auteur : " + track.model.artistName)
-			Text("Nom du l'album : " + track.model.collectionName)
+//			TextField("Nom du morceau : " + track.trackName)
+			TextField("Nom du morceau", text: $newTrackName)
+				.onSubmit {
+					track.trackName = newTrackName
+				}
+			Text("Nom de l'auteur : " + track.model.artistName)
+			Text("Nom de l'album : " + track.model.collectionName)
 		}
+			.padding()
 
 		VStack {
 			TextField(
 				"Nom du morceau",
 				text: $newTrackName
 			)
-				.padding()
 				.textFieldStyle(.roundedBorder)
 				.onSubmit {
 					track.trackName = newTrackName
 					newTrackName = ""
 				}
 		}
+			.padding()
 	}
 }
