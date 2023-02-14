@@ -8,13 +8,12 @@ class TrackListViewModel: RandomAccessCollection, ObservableObject, TrackViewMod
 
     @Published public var trackListViewModel: [TrackViewModel];
 
-    init(trackModelList: [TrackModel]) {
-        trackListViewModel = []
+    init(trackViewModelList: [TrackViewModel]) {
+        trackListViewModel = trackViewModelList
 
-        for model in trackModelList {
-            let trackViewModel = TrackViewModel(model: model)
+        trackListViewModel.forEach {
+            (trackViewModel) in
             trackViewModel.register(observer: self)
-            trackListViewModel.append(trackViewModel)
         }
     }
 

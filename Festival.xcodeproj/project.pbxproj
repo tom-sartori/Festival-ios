@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C152156935235749F97F370 /* TrackIntentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1524BE6D3FBB84D3784016 /* TrackIntentError.swift */; };
+		1C1521FBCF00126549B9A50B /* TrackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152FE36821C4D0F3261C0E /* TrackState.swift */; };
 		1C1522F06D0257757495246A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */; };
 		1C1523FF24A3A7E746FEBF30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152CB1AF2F8F5AA283A7F3 /* ContentView.swift */; };
+		1C1524B79F0C1360D61BE922 /* TrackIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152329FB496EE6FA685524 /* TrackIntent.swift */; };
 		1C1527114AF1E76CBC745B51 /* TrackViewModelObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152A8ECB6DC2A751E9965C /* TrackViewModelObserver.swift */; };
-		1C152791FB5375B337C73885 /* TrackModelObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152B77209160EA4FA88569 /* TrackModelObserver.swift */; };
 		1C1528A2FF85D597F84C0B70 /* FestivalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152BAF65DA58183207BBAE /* FestivalUITests.swift */; };
 		1C152A69981C26DDBE8F48F4 /* FestivalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152F0E7E970721A1C4F64F /* FestivalApp.swift */; };
 		1C152ABB4D810820329136A9 /* FestivalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152CDC6A95774A90C4E2DC /* FestivalUITestsLaunchTests.swift */; };
-		1C152C5A3ADA18A9802659FB /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1524203E7E60268BFFB65D /* TrackModel.swift */; };
 		1C152C72EC5CC7C49269FF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C152C908AB9530E5457DDC8 /* Assets.xcassets */; };
 		1C152E738ACBFD5D0AF8D792 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152F615D04860EC83A69DE /* TrackDetailView.swift */; };
 		1C152EF2B7A3E29B6A9A39D4 /* FestivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152E4247CA6CA9A0318172 /* FestivalTests.swift */; };
@@ -40,11 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C1524203E7E60268BFFB65D /* TrackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		1C152329FB496EE6FA685524 /* TrackIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackIntent.swift; sourceTree = "<group>"; };
+		1C1524BE6D3FBB84D3784016 /* TrackIntentError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackIntentError.swift; sourceTree = "<group>"; };
 		1C1528E3E84DDDED11A0B1B6 /* FestivalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1529469728113AEADAD04B /* FestivalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C152A8ECB6DC2A751E9965C /* TrackViewModelObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewModelObserver.swift; sourceTree = "<group>"; };
-		1C152B77209160EA4FA88569 /* TrackModelObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackModelObserver.swift; sourceTree = "<group>"; };
 		1C152BAF65DA58183207BBAE /* FestivalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalUITests.swift; sourceTree = "<group>"; };
 		1C152C908AB9530E5457DDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C152C96722ED4B3C59738F4 /* TrackListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		1C152F0E7E970721A1C4F64F /* FestivalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalApp.swift; sourceTree = "<group>"; };
 		1C152F615D04860EC83A69DE /* TrackDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C152FE36821C4D0F3261C0E /* TrackState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,9 @@
 				1C1524994B626A7115577AE6 /* model */,
 				1C1520F62C14C206878F3DC2 /* view-model */,
 				1C15228FF95EA1E5DD606505 /* view */,
+				1C152F9F1CEF9C65DFCA828F /* intent */,
+				1C152FFBD5E554E228756A73 /* state */,
+				1C152B9B666FB8D5CD1D99DB /* exception */,
 			);
 			path = Festival;
 			sourceTree = "<group>";
@@ -128,7 +133,6 @@
 		1C1524994B626A7115577AE6 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				1C1524203E7E60268BFFB65D /* TrackModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -137,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				1C152A8ECB6DC2A751E9965C /* TrackViewModelObserver.swift */,
-				1C152B77209160EA4FA88569 /* TrackModelObserver.swift */,
 			);
 			path = observer;
 			sourceTree = "<group>";
@@ -175,6 +178,30 @@
 				1C152CDC6A95774A90C4E2DC /* FestivalUITestsLaunchTests.swift */,
 			);
 			path = FestivalUITests;
+			sourceTree = "<group>";
+		};
+		1C152B9B666FB8D5CD1D99DB /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				1C1524BE6D3FBB84D3784016 /* TrackIntentError.swift */,
+			);
+			path = exception;
+			sourceTree = "<group>";
+		};
+		1C152F9F1CEF9C65DFCA828F /* intent */ = {
+			isa = PBXGroup;
+			children = (
+				1C152329FB496EE6FA685524 /* TrackIntent.swift */,
+			);
+			path = intent;
+			sourceTree = "<group>";
+		};
+		1C152FFBD5E554E228756A73 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				1C152FE36821C4D0F3261C0E /* TrackState.swift */,
+			);
+			path = state;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,11 +265,19 @@
 /* Begin PBXProject section */
 		1C152AC33EF0D12D635D5845 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					1C15221DFA691AF0FAE2D88B = {
+						DevelopmentTeam = V3BN3HX3TT;
+					};
+				};
+			};
 			buildConfigurationList = 1C152EA1B4C3188326A47FD4 /* Build configuration list for PBXProject "Festival" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 1C152154E35B87E917D803A5;
@@ -290,12 +325,13 @@
 			files = (
 				1C152A69981C26DDBE8F48F4 /* FestivalApp.swift in Sources */,
 				1C1527114AF1E76CBC745B51 /* TrackViewModelObserver.swift in Sources */,
-				1C152791FB5375B337C73885 /* TrackModelObserver.swift in Sources */,
-				1C152C5A3ADA18A9802659FB /* TrackModel.swift in Sources */,
 				1C152F2D712B65ED91EBF580 /* TrackListViewModel.swift in Sources */,
 				1C152F4DBF52B04AA17D979D /* TrackViewModel.swift in Sources */,
 				1C1523FF24A3A7E746FEBF30 /* ContentView.swift in Sources */,
 				1C152E738ACBFD5D0AF8D792 /* TrackDetailView.swift in Sources */,
+				1C1521FBCF00126549B9A50B /* TrackState.swift in Sources */,
+				1C152156935235749F97F370 /* TrackIntentError.swift in Sources */,
+				1C1524B79F0C1360D61BE922 /* TrackIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,12 +415,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"\"-Xlinker -interposable\"",
-				);
+				OTHER_LDFLAGS = "\"-Xlinker -interposable\"";
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -443,6 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Festival/Preview Content\"";
+				DEVELOPMENT_TEAM = V3BN3HX3TT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -467,6 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Festival/Preview Content\"";
+				DEVELOPMENT_TEAM = V3BN3HX3TT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -538,9 +573,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"\"-Xlinker -interposable\"",
-				);
+				OTHER_LDFLAGS = "\"-Xlinker -interposable\"";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -572,6 +605,7 @@
 				1C152BB2C5176C8D6AC22880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C15276581F09251AD6BE0AA /* Build configuration list for PBXNativeTarget "FestivalUITests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +614,7 @@
 				1C152EF40C4270720936EB97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C1528D5F9E37FDC5E514CF3 /* Build configuration list for PBXNativeTarget "Festival" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +623,7 @@
 				1C152DE84CBB9A1CFD78D7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C152EA1B4C3188326A47FD4 /* Build configuration list for PBXProject "Festival" */ = {
 			isa = XCConfigurationList;

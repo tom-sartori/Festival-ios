@@ -10,23 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
 
-	@StateObject var trackListViewModel = TrackListViewModel(trackModelList: [
-		TrackModel(trackName: "That's Life", artistName: "James Brown", collectionName: "Gettin' Down to It", releaseDate: "1969-05-01T12:00:00Z"),
-		TrackModel(trackName: "Shoot the Moon", artistName: "Norah Jones", collectionName: "Come Away With Me (Deluxe Edition)", releaseDate: "2002-02-26T08:00:00Z"),
-		TrackModel(trackName: "Kozmic Blues", artistName: "Janis Joplin", collectionName: "I Got Dem Ol' Kozmic  Blues Again Mama!", releaseDate: "1969-09-11T07:00:00Z"),
-		TrackModel(trackName: "You Found Another Lover (I Lost Another Friend)", artistName: "Ben Harper & Charlie Musselwhite", collectionName: "Get Up! (Deluxe Version)", releaseDate: "2013-01-29T12:00:00Z")
+	@StateObject var trackListViewModel = TrackListViewModel(trackViewModelList: [
+		TrackViewModel(trackName: "That's Life", artistName: "James Brown", collectionName: "Gettin' Down to It", releaseDate: "1969-05-01T12:00:00Z"),
+		TrackViewModel(trackName: "Shoot the Moon", artistName: "Norah Jones", collectionName: "Come Away With Me (Deluxe Edition)", releaseDate: "2002-02-26T08:00:00Z"),
+		TrackViewModel(trackName: "Kozmic Blues", artistName: "Janis Joplin", collectionName: "I Got Dem Ol' Kozmic  Blues Again Mama!", releaseDate: "1969-09-11T07:00:00Z"),
+		TrackViewModel(trackName: "You Found Another Lover (I Lost Another Friend)", artistName: "Ben Harper & Charlie Musselwhite", collectionName: "Get Up! (Deluxe Version)", releaseDate: "2013-01-29T12:00:00Z")
 	])
 
 
 	var body: some View {
-//		VStack {
-//			Image(systemName: "globe")
-//				.imageScale(.large)
-//				.foregroundColor(.accentColor)
-//			Text("Hello, world")
-//		}
-//			.padding()
-
 		VStack {
 			NavigationStack {
 				List {
@@ -45,8 +37,11 @@ struct ContentView: View {
 							trackListViewModel.move(fromOffsets: indexSet, toOffset: index)
 						}
 				}
+					.navigationTitle("Track List")
+					.toolbar {
+						EditButton()
+					}
 			}
-			EditButton()
 		}
 	}
 }
