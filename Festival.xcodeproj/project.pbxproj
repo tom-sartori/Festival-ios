@@ -111,7 +111,6 @@
 				1C15281657A92DDB4716448D /* Preview Content */,
 				1C152F0E7E970721A1C4F64F /* FestivalApp.swift */,
 				1C15259F6F992EB7146F67A5 /* observer */,
-				1C1524994B626A7115577AE6 /* model */,
 				1C1520F62C14C206878F3DC2 /* view-model */,
 				1C15228FF95EA1E5DD606505 /* view */,
 				1C152F9F1CEF9C65DFCA828F /* intent */,
@@ -128,13 +127,6 @@
 				1C152F615D04860EC83A69DE /* TrackDetailView.swift */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		1C1524994B626A7115577AE6 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		1C15259F6F992EB7146F67A5 /* observer */ = {
