@@ -12,7 +12,9 @@
 		1C1522F06D0257757495246A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */; };
 		1C1523FF24A3A7E746FEBF30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152CB1AF2F8F5AA283A7F3 /* ContentView.swift */; };
 		1C1524B79F0C1360D61BE922 /* TrackIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152329FB496EE6FA685524 /* TrackIntent.swift */; };
+		1C15260963237EFC442FAE2E /* playlist2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C1523C3B7C4816DBC37ED25 /* playlist2.json */; };
 		1C1527114AF1E76CBC745B51 /* TrackViewModelObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152A8ECB6DC2A751E9965C /* TrackViewModelObserver.swift */; };
+		1C15289DF24A3D91420B89BD /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C15270AEF44B9F716001CD2 /* JSONHelper.swift */; };
 		1C1528A2FF85D597F84C0B70 /* FestivalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152BAF65DA58183207BBAE /* FestivalUITests.swift */; };
 		1C152A69981C26DDBE8F48F4 /* FestivalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152F0E7E970721A1C4F64F /* FestivalApp.swift */; };
 		1C152ABB4D810820329136A9 /* FestivalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152CDC6A95774A90C4E2DC /* FestivalUITestsLaunchTests.swift */; };
@@ -42,7 +44,9 @@
 
 /* Begin PBXFileReference section */
 		1C152329FB496EE6FA685524 /* TrackIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackIntent.swift; sourceTree = "<group>"; };
+		1C1523C3B7C4816DBC37ED25 /* playlist2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = playlist2.json; sourceTree = "<group>"; };
 		1C1524BE6D3FBB84D3784016 /* TrackIntentError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackIntentError.swift; sourceTree = "<group>"; };
+		1C15270AEF44B9F716001CD2 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		1C1528E3E84DDDED11A0B1B6 /* FestivalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1529469728113AEADAD04B /* FestivalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C152A8ECB6DC2A751E9965C /* TrackViewModelObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewModelObserver.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				1C152F9F1CEF9C65DFCA828F /* intent */,
 				1C152FFBD5E554E228756A73 /* state */,
 				1C152B9B666FB8D5CD1D99DB /* exception */,
+				1C1525F14FDAC5DF953FAD97 /* assets */,
+				1C152B1881909525CC7D6CBE /* helper */,
 			);
 			path = Festival;
 			sourceTree = "<group>";
@@ -135,6 +141,14 @@
 				1C152A8ECB6DC2A751E9965C /* TrackViewModelObserver.swift */,
 			);
 			path = observer;
+			sourceTree = "<group>";
+		};
+		1C1525F14FDAC5DF953FAD97 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				1C1523C3B7C4816DBC37ED25 /* playlist2.json */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 		1C15281657A92DDB4716448D /* Preview Content */ = {
@@ -170,6 +184,14 @@
 				1C152CDC6A95774A90C4E2DC /* FestivalUITestsLaunchTests.swift */,
 			);
 			path = FestivalUITests;
+			sourceTree = "<group>";
+		};
+		1C152B1881909525CC7D6CBE /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				1C15270AEF44B9F716001CD2 /* JSONHelper.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 		1C152B9B666FB8D5CD1D99DB /* exception */ = {
@@ -305,6 +327,7 @@
 			files = (
 				1C152C72EC5CC7C49269FF5A /* Assets.xcassets in Resources */,
 				1C1522F06D0257757495246A /* Preview Assets.xcassets in Resources */,
+				1C15260963237EFC442FAE2E /* playlist2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +347,7 @@
 				1C1521FBCF00126549B9A50B /* TrackState.swift in Sources */,
 				1C152156935235749F97F370 /* TrackIntentError.swift in Sources */,
 				1C1524B79F0C1360D61BE922 /* TrackIntent.swift in Sources */,
+				1C15289DF24A3D91420B89BD /* JSONHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
