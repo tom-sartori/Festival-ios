@@ -11,7 +11,7 @@ struct FestivalListView: View {
 
     @State private var isShowingAddFestivalPopover = false
     @State private var addingFestival = FestivalModelDto()
-    @State private var addingDate = Date()
+    @State private var startDate = Date()
 
     @AppStorage("isAdmin") var isAdmin: Bool = false
 
@@ -37,9 +37,6 @@ struct FestivalListView: View {
                             Text(festival.name)
                         }
                     }
-                        //                        .onDelete { (indexSet: IndexSet) in
-                        //                            festivalListModel.remove(atOffsets: indexSet)
-                        //                        }
                         .onDelete(perform: delete).deleteDisabled(!isAdmin)
                 }
                     .refreshable {
@@ -47,7 +44,7 @@ struct FestivalListView: View {
                     }
                 Button("Ajouter un festival") {
                     addingFestival = FestivalModelDto()
-                    addingDate = Date()
+                    startDate = .now
                     isShowingAddFestivalPopover.toggle()
                 }
                     .isVisible(isAdmin)
@@ -56,7 +53,7 @@ struct FestivalListView: View {
                             Form {
                                 Section {
                                     TextField("Nom du festival", text: $addingFestival.name)
-                                    DatePicker("Date de début", selection: $addingDate, displayedComponents: .date)
+                                    DatePicker("Date de début", selection: $startDate, displayedComponents: .date)
                                 }
                                     .onSubmit {
                                         addFestival()
@@ -80,7 +77,7 @@ struct FestivalListView: View {
 
     private func addFestival() {
         let f: FestivalModel = FestivalModel(festivalDto: addingFestival)
-        f.startDate = addingDate
+        f.startDate = startDate
         festivalListModel.append(f)
         isShowingAddFestivalPopover.toggle()
         intent.create(festival: f)
