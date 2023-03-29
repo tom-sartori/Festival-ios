@@ -21,8 +21,8 @@ struct ContentView: View {
                     showingPopoverUserView.toggle()
                 }, label: {
                     Label("User", systemImage: "person.fill")
-//                    Image("person.fill")
-                }))
+                }).isHidden(showingPopoverUserView)
+                )
                 .popover(isPresented: $showingPopoverUserView, content: {
                     UserView()
                         .padding()

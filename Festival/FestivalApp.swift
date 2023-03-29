@@ -11,17 +11,8 @@ import SwiftUI
 @main
 struct FestivalApp: App {
     init() {
-//        #if DEBUG
-//        var injectionBundlePath = "/Applications/InjectionIII.app/Contents/Resources"
-//        #if targetEnvironment(macCatalyst)
-//        injectionBundlePath = "\(injectionBundlePath)/macOSInjection.bundle"
-//        #elseif os(iOS)
-//        injectionBundlePath = "\(injectionBundlePath)/iOSInjection.bundle"
-//        #endif
-//        Bundle(path: injectionBundlePath)?.load()
-//        #endif
-
         UserDefaults.standard.set(false, forKey: "isAdmin")
+        UserDefaults.standard.set(nil, forKey: "token")
     }
 
     var body: some Scene {
