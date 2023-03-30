@@ -29,6 +29,11 @@ class UserModel : Codable, Hashable {
         self.password = password
     }
 
+    init(id: String) {
+        self.id = id
+        self.email = ""
+    }
+
     init(firstName: String?, lastName: String?, email: String, password: String?) {
         self.firstName = firstName
         self.lastName = lastName
@@ -46,11 +51,6 @@ class UserModel : Codable, Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(type(of: self)))
         hasher.combine(id)
-        hasher.combine(firstName)
-        hasher.combine(lastName)
-        hasher.combine(email)
-        hasher.combine(password)
-        hasher.combine(token)
     }
 
     static func ==(lhs: UserModel, rhs: UserModel) -> Bool {
@@ -61,21 +61,6 @@ class UserModel : Codable, Hashable {
             return false
         }
         if lhs.id != rhs.id {
-            return false
-        }
-        if lhs.firstName != rhs.firstName {
-            return false
-        }
-        if lhs.lastName != rhs.lastName {
-            return false
-        }
-        if lhs.email != rhs.email {
-            return false
-        }
-        if lhs.password != rhs.password {
-            return false
-        }
-        if lhs.token != rhs.token {
             return false
         }
         return true

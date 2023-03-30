@@ -4,12 +4,29 @@
 
 import Foundation
 
-class ZoneModel: Equatable, Hashable {
+class ZoneModel: Equatable, Hashable, ObservableObject {
 
     @Published public var id: UUID = UUID()
     @Published public var name: String
     @Published public var nbVolunteerNeeded: Int
     @Published public var volunteers: [UserModel]
+
+    @Published public var state: FestivalZoneState = .ready {
+        didSet {
+            switch state {
+                case .ready:
+                    debugPrint("ZoneModel : ready. ")
+                case .loading:
+                    debugPrint("ZoneModel : loading. ")
+                case .update(let data):
+                    debugPrint("ZoneModel : update. ")
+                    self.name = data.name
+                    self.nbVolunteerNeeded = data.nbVolunteerNeeded
+                    self.volunteers = data.volunteers
+                    state = .ready
+            }
+        }
+    }
 
     init(zoneDto: ZoneModelDto) {
         self.name = zoneDto.name

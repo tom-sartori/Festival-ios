@@ -12,8 +12,8 @@ struct UserModelDto : Codable {
 
     init(userModel: UserModel) {
         self.id = userModel.id!
-        self.firstName = userModel.firstName!
-        self.lastName = userModel.lastName!
+        self.firstName = userModel.firstName ?? ""
+        self.lastName = userModel.lastName ?? ""
         self.email = userModel.email
     }
 }
