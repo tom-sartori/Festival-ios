@@ -39,21 +39,19 @@ struct FestivalDayView: View {
                             Text("\(slot.startHour.toHourMinuteString()) - \(slot.endHour.toHourMinuteString())")
                         }
                     }
-                        .onDelete(perform : delete)
+                        .onDelete(perform: delete)
                         .deleteDisabled(!isAdmin)
                 }
-
             }
             Button("Ajouter un créneau") {
                 addingSlot = SlotModel()
                 showingPopoverAddSlot.toggle()
-
-            }.isVisible(isAdmin)
+            }
+                .isVisible(isAdmin)
                 .popover(isPresented: $showingPopoverAddSlot) {
                     VStack {
                         Form {
                             Section {
-                                Text("Créneau")
                                 DatePicker(selection: $addingSlot.startHour, displayedComponents: .hourAndMinute) {
                                     Text("Heure de début")
                                 }

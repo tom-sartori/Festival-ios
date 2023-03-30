@@ -25,8 +25,8 @@ struct FestivalDayIntent {
         day.state = .loading
         if let index = day.slots.firstIndex(of: slotModel) {
             day.slots[index] = slotModel
+            update(dayModel: day)
         }
-        update(dayModel: day)
         day.state = .ready
     }
 
