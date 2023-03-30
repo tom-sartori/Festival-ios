@@ -34,6 +34,7 @@ struct FestivalListView: View {
                     .refreshable {
                         intent.load()
                     }
+                    .navigationTitle("Nos festivals")
                 Button("Ajouter un festival") {
                     addingFestival = FestivalModelDto()
                     startDate = .now

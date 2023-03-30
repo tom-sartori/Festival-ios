@@ -10,7 +10,7 @@ import Foundation
 struct GameDao {
     
     func create(game: GameModel) async -> Bool {
-        guard let url = URL(string: "https://cw0rrih8f9.execute-api.eu-west-3.amazonaws.com/game") else {
+        guard let url = URL(string: "https://nos4jpqp7a.execute-api.eu-west-3.amazonaws.com/game") else {
             print("bad GoRest URL")
             return false
         }
@@ -43,7 +43,7 @@ struct GameDao {
     }
     
     func read() async -> [GameModel] {
-        guard let url = URL(string: "https://cw0rrih8f9.execute-api.eu-west-3.amazonaws.com/game") else {
+        guard let url = URL(string: "https://nos4jpqp7a.execute-api.eu-west-3.amazonaws.com/game") else {
             print("bad GoRest URL")
             return [] /// TODO
         }
@@ -66,7 +66,7 @@ struct GameDao {
     }
     
     func read(name: String) async -> [GameModel] {
-        guard let url = URL(string: "https://cw0rrih8f9.execute-api.eu-west-3.amazonaws.com/game/name/\(name)") else {
+        guard let url = URL(string: "https://nos4jpqp7a.execute-api.eu-west-3.amazonaws.com/game/name/\(name)") else {
             print("bad GoRest URL")
             return [] /// TODO
         }
@@ -90,7 +90,7 @@ struct GameDao {
 
     
     func update(id: String, game: GameModel) async -> Bool {
-        guard let url = URL(string: "https://cw0rrih8f9.execute-api.eu-west-3.amazonaws.com/game/\(id)") else {
+        guard let url = URL(string: "https://nos4jpqp7a.execute-api.eu-west-3.amazonaws.com/game/\(id)") else {
             print("bad GoRest URL")
             return false
         }
@@ -123,7 +123,7 @@ struct GameDao {
     }
     
     func delete(id: String) async {
-        guard let url = URL(string: "https://cw0rrih8f9.execute-api.eu-west-3.amazonaws.com/game/\(id)") else {
+        guard let url = URL(string: "https://nos4jpqp7a.execute-api.eu-west-3.amazonaws.com/game/\(id)") else {
             print("bad GoRest URL")
             return
         }
@@ -147,9 +147,6 @@ struct GameDao {
 //                    print("Error \(httpresponse.statusCode): \(HTTPURLResponse.localizedString(forStatusCode: httpresponse.statusCode))")
                 
             }
-        }
-        catch {
-            print("GoRest: bad request")
         }
     }
     

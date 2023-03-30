@@ -40,6 +40,7 @@ struct FestivalDetailView: View {
                 .padding(.horizontal)
             NavigationStack {
                 List {
+                    Section {} header: { Text("Liste des journées")}
                     ForEach(festival.days, id: \.self) { (day: DayModel) in
                         NavigationLink(destination: FestivalDayView(festivalIntent: intent, day: day)) {
                             Text("\(day.name) : \(day.startHour.toHourMinuteString()) - \(day.endHour.toHourMinuteString())")
