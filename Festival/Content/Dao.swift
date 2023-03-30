@@ -9,8 +9,8 @@ import SwiftUI
 
 class Dao<T: Codable> {
 
-    public let apiUrl = "http://localhost:8080"
-//    public let apiUrl = "https://teewvds053.execute-api.eu-west-3.amazonaws.com"
+//    public let apiUrl = "http://localhost:8080"
+    public let apiUrl = "https://teewvds053.execute-api.eu-west-3.amazonaws.com"
 
     @AppStorage("token") var token: String?
 
@@ -81,7 +81,6 @@ class Dao<T: Codable> {
 
         var request = URLRequest(url: url)
 
-//        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")    /// TODO
         request.httpMethod = "DELETE"
 
         let (_, response) = try! await URLSession.shared.data(for: request)

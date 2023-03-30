@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class UserDAO : Dao<UserModel> {
+class UserDAO : Dao<UserModelDto> {
 
     @AppStorage("isAdmin") var isAdmin: Bool = false
 
@@ -91,6 +91,10 @@ class UserDAO : Dao<UserModel> {
         catch{
             print("GoRest: bad request")
         }
+    }
+
+    func read() async throws -> [UserModelDto] {
+        try await super.read(url: "/user")
     }
 
     func logout() -> Void{
