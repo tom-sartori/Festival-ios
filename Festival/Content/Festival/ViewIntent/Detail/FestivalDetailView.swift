@@ -41,13 +41,11 @@ struct FestivalDetailView: View {
             NavigationStack {
                 List {
                     ForEach(festival.days, id: \.self) { (day: DayModel) in
-                        NavigationLink(destination: FestivalDayView(day: day)) {
+                        NavigationLink(destination: FestivalDayView(festivalIntent: intent, day: day)) {
                             Text("\(day.name) : \(day.startHour.toHourMinuteString()) - \(day.endHour.toHourMinuteString())")
                         }
                     }
-                        .onDelete { (indexSet: IndexSet) in
-                            festival.days.remove(atOffsets: indexSet)
-                        }
+                        .onDelete(perform : delete)
                         .deleteDisabled(!isAdmin)
                 }
             }
@@ -61,9 +59,6 @@ struct FestivalDetailView: View {
                         Form {
                             Section {
                                 TextField("Nom du jour", text: $addingDay.name)
-//                                TextField("Heure de début", text: $addingDay.startHour)
-//                                TextField("Heure de fin", text: $addingDay.endHour)
-
                                 DatePicker(selection: $addingDay.startHour, displayedComponents: .hourAndMinute) {
                                     Text("Heure de début")
                                 }
@@ -91,7 +86,6 @@ struct FestivalDetailView: View {
                     }
                 }
                 .padding()
-//                .background(Color(UIColor.systemGroupedBackground))
         }
     }
 
@@ -103,5 +97,9 @@ struct FestivalDetailView: View {
 
     private func update() -> Void {
         intent.update(festivalModel: festival)
+    }
+
+    private func delete(at offsets: IndexSet) {
+        intent.delete(at: offsets)
     }
 }
