@@ -15,12 +15,6 @@ struct FestivalListView: View {
 
     @AppStorage("isAdmin") var isAdmin: Bool = false
 
-    private let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        return formatter
-    }()
-
     init() {
         let festivalList = FestivalListModel()
 
