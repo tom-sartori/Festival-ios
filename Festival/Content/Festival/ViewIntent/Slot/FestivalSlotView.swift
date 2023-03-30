@@ -34,6 +34,7 @@ struct FestivalSlotView: View {
                 }
             NavigationStack {
                 List {
+                    Section {} header: { Text("Liste des zones")}
                     ForEach(slot.zones, id: \.self) { (zone: ZoneModel) in
                         NavigationLink(destination: FestivalZoneView(festivalSlotIntent: intent, zone: zone)) {
                             Text(zone.name)

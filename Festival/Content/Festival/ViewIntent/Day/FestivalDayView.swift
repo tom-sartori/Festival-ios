@@ -34,6 +34,7 @@ struct FestivalDayView: View {
                 }
             NavigationStack {
                 List {
+                    Section {} header: { Text("Liste des créneaux")}
                     ForEach(day.slots, id: \.self) { (slot: SlotModel) in
                         NavigationLink(destination: FestivalSlotView(festivalDayIntent: intent, slot: slot)) {
                             Text("\(slot.startHour.toHourMinuteString()) - \(slot.endHour.toHourMinuteString())")
