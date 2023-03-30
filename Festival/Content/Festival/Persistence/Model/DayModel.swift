@@ -5,12 +5,31 @@
 import Foundation
 import SwiftUI
 
-class DayModel: Equatable, Hashable {
+class DayModel: Equatable, Hashable, ObservableObject {
 
+    @Published public var id: UUID = UUID()
     @Published public var name: String
     @Published public var startHour: Date
     @Published public var endHour: Date
     @Published public var slots: [SlotModel]
+
+    @Published public var state: FestivalDayState = .ready {
+        didSet {
+            switch state {
+                case .ready:
+                    debugPrint("DayModel : ready. ")
+                case .loading:
+                    debugPrint("DayModel : loading. ")
+                case .update(let data):
+                    debugPrint("DayModel : update. ")
+                    self.name = data.name
+                    self.startHour = data.startHour
+                    self.endHour = data.endHour
+                    self.slots = data.slots
+                    state = .ready
+            }
+        }
+    }
 
     init() {
         self.name = "";
@@ -38,9 +57,7 @@ class DayModel: Equatable, Hashable {
 
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(type(of: self)))
-        hasher.combine(name)
-        hasher.combine(startHour)
-        hasher.combine(endHour)
+        hasher.combine(id)
     }
 
     static func ==(lhs: DayModel, rhs: DayModel) -> Bool {
@@ -50,13 +67,7 @@ class DayModel: Equatable, Hashable {
         if type(of: lhs) != type(of: rhs) {
             return false
         }
-        if lhs.name != rhs.name {
-            return false
-        }
-        if lhs.startHour != rhs.startHour {
-            return false
-        }
-        if lhs.endHour != rhs.endHour {
+        if lhs.id != rhs.id {
             return false
         }
         return true

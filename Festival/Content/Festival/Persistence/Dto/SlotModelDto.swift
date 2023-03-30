@@ -10,8 +10,8 @@ struct SlotModelDto : Codable {
     private(set) var zones: [ZoneModelDto]
 
     init(slotModel: SlotModel) {
-        self.startHour = slotModel.startHour
-        self.endHour = slotModel.endHour
+        self.startHour = slotModel.startHour.toISOString()
+        self.endHour = slotModel.endHour.toISOString()
         self.zones = []
         for zoneModel in slotModel.zones {
             self.zones.append(ZoneModelDto(zoneModel: zoneModel))

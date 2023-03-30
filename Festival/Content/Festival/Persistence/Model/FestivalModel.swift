@@ -21,7 +21,7 @@ class FestivalModel: Equatable, Hashable, ObservableObject {
                     debugPrint("FestivalModel : loading. ")
                 case .update(let data):
                     debugPrint("FestivalModel : update. ")
-//                    self.id = data.id
+                    self.id = data.id
                     self.name = data.name
                     self.startDate = data.startDate
                     self.active = data.active
@@ -61,11 +61,6 @@ class FestivalModel: Equatable, Hashable, ObservableObject {
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(type(of: self)))
         hasher.combine(id)
-        hasher.combine(name)
-        hasher.combine(startDate)
-        hasher.combine(active)
-        hasher.combine(days)
-        hasher.combine(state)
     }
 
     static func ==(lhs: FestivalModel, rhs: FestivalModel) -> Bool {
@@ -78,21 +73,7 @@ class FestivalModel: Equatable, Hashable, ObservableObject {
         if lhs.id != rhs.id {
             return false
         }
-        if lhs.name != rhs.name {
-            return false
-        }
-        if lhs.startDate != rhs.startDate {
-            return false
-        }
-        if lhs.active != rhs.active {
-            return false
-        }
-        if lhs.days != rhs.days {
-            return false
-        }
-        if lhs.state != rhs.state {
-            return false
-        }
+
         return true
     }
 }

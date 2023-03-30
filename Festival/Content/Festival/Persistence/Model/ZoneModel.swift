@@ -6,6 +6,7 @@ import Foundation
 
 class ZoneModel: Equatable, Hashable {
 
+    @Published public var id: UUID = UUID()
     @Published public var name: String
     @Published public var nbVolunteerNeeded: Int
     @Published public var volunteers: [UserModel]
@@ -19,10 +20,15 @@ class ZoneModel: Equatable, Hashable {
         }
     }
 
+    init(){
+        self.name = ""
+        self.nbVolunteerNeeded = 0
+        self.volunteers = []
+    }
+
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(type(of: self)))
-        hasher.combine(name)
-        hasher.combine(nbVolunteerNeeded)
+        hasher.combine(id)
     }
 
     static func ==(lhs: ZoneModel, rhs: ZoneModel) -> Bool {
@@ -32,10 +38,7 @@ class ZoneModel: Equatable, Hashable {
         if type(of: lhs) != type(of: rhs) {
             return false
         }
-        if lhs.name != rhs.name {
-            return false
-        }
-        if lhs.nbVolunteerNeeded != rhs.nbVolunteerNeeded {
+        if lhs.id != rhs.id {
             return false
         }
         return true

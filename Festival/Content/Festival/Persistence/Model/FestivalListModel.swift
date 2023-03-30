@@ -23,8 +23,8 @@ class FestivalListModel: RandomAccessCollection, ObservableObject {
         }
     }
 
-    init() {
-        festivals = []
+    init(festivals: [FestivalModel]) {
+        self.festivals = festivals
     }
 
     private func mapFromDto(festivalDtoList: [FestivalModelDto]) -> [FestivalModel] {
