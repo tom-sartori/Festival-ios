@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		1C1520838EF77856B954C38E /* FestivalDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152281A1558E96AA9F7027 /* FestivalDetailState.swift */; };
 		1C15209A24E1A23A3F5B8B3E /* FestivalDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1528DE632E432A2205370E /* FestivalDayView.swift */; };
+		1C152139FE361833C62F47AD /* FestivalDayIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152490012C9FB8AB0249B8 /* FestivalDayIntent.swift */; };
 		1C152159C9B3E7DD244F9F64 /* SlotModelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152272F30FDAE38490DC66 /* SlotModelDto.swift */; };
 		1C15218E8D448DFB7AAD1680 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C15208E37D6B6C0381D7334 /* UserModel.swift */; };
+		1C1521C15DBC432987E8236C /* FestivalSlotIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152B56A4BB72F2242BE427 /* FestivalSlotIntent.swift */; };
 		1C1522D33DE72E2806E723C9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152F203C83E12C95D05769 /* LoginView.swift */; };
 		1C1522F06D0257757495246A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */; };
 		1C15236C24F349E3B18882E3 /* FestivalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152A8F84D5156EA4C26C74 /* FestivalView.swift */; };
@@ -22,6 +24,7 @@
 		1C15252CD1D36E856A851A13 /* GameListIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1522210E603CD85B92A923 /* GameListIntent.swift */; };
 		1C1525A0923206F4D4A73D56 /* GameListIntentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152D16390E59474E30DE38 /* GameListIntentError.swift */; };
 		1C152614D07A164B98274B0B /* GameDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1525E383DE5EC8E1A3E82E /* GameDao.swift */; };
+		1C152616E4D566E549677744 /* FestivalDayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152011F02A2B070CA6734B /* FestivalDayState.swift */; };
 		1C152644F12B58FD2E956CAA /* DayModelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152D692AF0456B76887243 /* DayModelDto.swift */; };
 		1C15267019F3E1D574988248 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152802855BE508C96750EF /* GameState.swift */; };
 		1C15268BA10853581A6613D3 /* GameListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152C1426385503F145A51F /* GameListState.swift */; };
@@ -41,6 +44,7 @@
 		1C152ABB4D810820329136A9 /* FestivalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152CDC6A95774A90C4E2DC /* FestivalUITestsLaunchTests.swift */; };
 		1C152AC1D80AC12347CF4375 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1529AE90C9A85BC1F17C80 /* ViewExtension.swift */; };
 		1C152ACBBCD8333BA3BA7F6E /* FestivalListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1528388139044F2A9E24B4 /* FestivalListState.swift */; };
+		1C152AE0CF639EA12A6567F3 /* FestivalSlotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152B3A72C32998EC80D08E /* FestivalSlotState.swift */; };
 		1C152B52D50319DC1E68003E /* FestivalSlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C152F8F56D05A2C816BCBE4 /* FestivalSlotView.swift */; };
 		1C152B634A5EACC84B260381 /* FestivalZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C15274C7E57EFCE686DB943 /* FestivalZoneView.swift */; };
 		1C152B67CA685CCF1004AFB7 /* FestivalModelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1520A69BFFA7422E12E3A1 /* FestivalModelDto.swift */; };
@@ -83,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C152011F02A2B070CA6734B /* FestivalDayState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FestivalDayState.swift; sourceTree = "<group>"; };
 		1C152012C8287FB588A6BE7A /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		1C152070D6B9FE6D40DD7A13 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1C15208BF85505D250008986 /* UserModelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelDto.swift; sourceTree = "<group>"; };
@@ -99,6 +104,7 @@
 		1C1523C04588EA7E942B18A3 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		1C1523FED330AC20888CF4F4 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		1C15244921E7E32B89B1C325 /* ZoneModelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneModelDto.swift; sourceTree = "<group>"; };
+		1C152490012C9FB8AB0249B8 /* FestivalDayIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FestivalDayIntent.swift; sourceTree = "<group>"; };
 		1C1524A2996F070EEF698F63 /* IsVisibleViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsVisibleViewModifier.swift; sourceTree = "<group>"; };
 		1C1525254DA4F35F2830C97C /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1C15256808781860F284F6D6 /* FestivalListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FestivalListModel.swift; sourceTree = "<group>"; };
@@ -120,6 +126,8 @@
 		1C152A8F84D5156EA4C26C74 /* FestivalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FestivalView.swift; sourceTree = "<group>"; };
 		1C152AAC1CD629C833E0E304 /* GameListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
 		1C152B0CD81D16B96A081672 /* FestivalDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FestivalDao.swift; sourceTree = "<group>"; };
+		1C152B3A72C32998EC80D08E /* FestivalSlotState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FestivalSlotState.swift; sourceTree = "<group>"; };
+		1C152B56A4BB72F2242BE427 /* FestivalSlotIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FestivalSlotIntent.swift; sourceTree = "<group>"; };
 		1C152BAF65DA58183207BBAE /* FestivalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalUITests.swift; sourceTree = "<group>"; };
 		1C152C1426385503F145A51F /* GameListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListState.swift; sourceTree = "<group>"; };
 		1C152C8044589281DEE3577F /* GameUpdateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameUpdateView.swift; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 		1C152FC62ABC588374A4E064 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C152FE3332C3438D7CE2684 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		E2639DF529B9FF410018F869 /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		E27C1ADD29D510F500C69F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				1C152F8F56D05A2C816BCBE4 /* FestivalSlotView.swift */,
+				1C152B3A72C32998EC80D08E /* FestivalSlotState.swift */,
+				1C152B56A4BB72F2242BE427 /* FestivalSlotIntent.swift */,
 			);
 			path = Slot;
 			sourceTree = "<group>";
@@ -202,6 +213,7 @@
 		1C152287C4C0CAC5CDF3583F /* Festival */ = {
 			isa = PBXGroup;
 			children = (
+				E27C1ADD29D510F500C69F21 /* Info.plist */,
 				E2639DF729B9FF480018F869 /* Helper */,
 				1C152C908AB9530E5457DDC8 /* Assets.xcassets */,
 				1C152F0E7E970721A1C4F64F /* FestivalApp.swift */,
@@ -278,6 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				1C1528DE632E432A2205370E /* FestivalDayView.swift */,
+				1C152011F02A2B070CA6734B /* FestivalDayState.swift */,
+				1C152490012C9FB8AB0249B8 /* FestivalDayIntent.swift */,
 			);
 			path = Day;
 			sourceTree = "<group>";
@@ -560,10 +574,9 @@
 			};
 			buildConfigurationList = 1C152EA1B4C3188326A47FD4 /* Build configuration list for PBXProject "Festival" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 			);
 			mainGroup = 1C152154E35B87E917D803A5;
@@ -660,6 +673,10 @@
 				1C1523FAFC76F86811299642 /* TextAdmin.swift in Sources */,
 				1C1523FF347ADCF91F60A02E /* DateExtension.swift in Sources */,
 				1C1528275F50FFCAA5D73631 /* StringExtension.swift in Sources */,
+				1C152616E4D566E549677744 /* FestivalDayState.swift in Sources */,
+				1C152139FE361833C62F47AD /* FestivalDayIntent.swift in Sources */,
+				1C152AE0CF639EA12A6567F3 /* FestivalSlotState.swift in Sources */,
+				1C1521C15DBC432987E8236C /* FestivalSlotIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,7 +824,7 @@
 				DEVELOPMENT_TEAM = V3BN3HX3TT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Festival/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -832,7 +849,7 @@
 				DEVELOPMENT_TEAM = V3BN3HX3TT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Festival/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
