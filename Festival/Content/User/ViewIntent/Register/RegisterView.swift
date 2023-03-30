@@ -39,7 +39,7 @@ struct RegisterView: View {
                 }
                     .disabled(disabledForm)
             }
-                .navigationTitle(Text("S'inscrire"))
+                .navigationTitle("S'inscrire")
         }
             .onSubmit {
                 Task {

@@ -33,7 +33,7 @@ struct LoginView: View {
                 }
                     .disabled(disabledForm)
             }
-                .navigationTitle(Text("Se connecter"))
+                .navigationTitle("Se connecter")
         }
             .onSubmit {
                 Task {

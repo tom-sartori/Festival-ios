@@ -12,7 +12,7 @@ struct ProfileView : View{
                     UserDAO().logout()
                 })
             }
-                .navigationTitle(Text("Profil"))
+                .navigationTitle("Profil")
         }
     }
 }
