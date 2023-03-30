@@ -15,10 +15,8 @@ struct FestivalListView: View {
 
     @AppStorage("isAdmin") var isAdmin: Bool = false
 
-    init() {
-        let festivalList = FestivalListModel()
-
-        self.festivalListModel = festivalList
+    init(festivalList: FestivalListModel) {
+        festivalListModel = festivalList
         intent = FestivalListIntent(festivalList: festivalList)
     }
 
@@ -83,11 +81,5 @@ struct FestivalListView: View {
 
     private func delete(at offsets: IndexSet) {
         intent.delete(at: offsets)
-    }
-}
-
-struct FestivalListView_Previews: PreviewProvider {
-    static var previews: some View {
-        FestivalListView()
     }
 }

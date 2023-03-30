@@ -6,7 +6,9 @@ import SwiftUI
 
 struct FestivalView: View {
 
+    @StateObject private var festivalList: FestivalListModel = FestivalListModel(festivals: [])
+
     var body: some View {
-        FestivalListView()
+        FestivalListView(festivalList: festivalList)
     }
 }
